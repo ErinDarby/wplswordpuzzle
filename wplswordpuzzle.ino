@@ -32,7 +32,7 @@ CRGB leds[NUM_LEDS];
 // Initialise a software serial interface on the approriate Rx/Tx pins (8/9)
 AltSoftSerial altSerial;
 // And create an MP3 object based on the serial connection
-MD_YX5300 mp3(altSerial);
+//MD_YX5300 mp3(altSerial);
 
 // LED bar properties
 int pos16 = 0; // Position of the LED bar in the chase sequence (1/16ths of a pixel)
@@ -124,7 +124,7 @@ void loop() {
       // Reset the position of the LED bar
       pos16 = 0;
       // Play the sound effect
-      mp3.playTrack(1);
+      //mp3.playTrack(1);
     }
     // Set full brightness
     brightness = 255;
