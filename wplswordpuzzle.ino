@@ -60,11 +60,11 @@ void setup() {
  
   // Initialise the serial MP3 player
   altSerial.begin(9600);
-  mp3.begin();
+  //mp3.begin();
   // Send messages using simple synchronous mode
-  mp3.setSynchronous(true);
+  //mp3.setSynchronous(true);
   // Volume is a value from 0-30
-  mp3.volume(30);
+  //mp3.volume(30);
 }
  
 // Draw a smooth "Light Bar" on the LED strip, starting at position 'pos16',
